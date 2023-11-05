@@ -67,6 +67,9 @@ header {
         }
       }
       .nav-btn {
+        display: flex;
+        align-items: center;
+        gap: 24px;
         #dark-light {
           background-color: transparent;
           cursor: pointer;
@@ -160,14 +163,82 @@ header {
             outline: 0;
           }
         }
+        .burger_menu {
+          display: none;
+        }
       }
     }
   }
-  @media only screen and (max-width: 999px) {
+}
+@media only screen and (max-width: 999px) {
+  header {
     nav {
       .nav_items {
         .nav-items {
-          display: none;
+          position: absolute;
+          top: 100%;
+          right: 0;
+          width: 65vw;
+          background-color: rgba(35, 37, 54, 0.909);
+          flex-direction: column;
+          padding: 50px;
+          align-items: flex-start;
+          transform: translateX(100%);
+          transition: all 0.5s ease-in-out;
+
+          a {
+            font-size: 20px;
+            &::before {
+              top: -10px;
+            }
+          }
+        }
+        .nav-btn {
+          .burger_menu {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+            width: 28px;
+            height: 24px;
+            transition: all 0.5s ease-in-out;
+            span {
+              width: 100%;
+              height: 3px;
+              background-color: #fff;
+              opacity: 0.5;
+              transition: all 0.5s ease-in-out;
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .open_menu {
+    header {
+      nav {
+        .nav_items {
+          .nav-items {
+            transform: translateX(0);
+          }
+          .nav-btn {
+            .burger_menu {
+              transform: rotate(360deg);
+              &_top {
+                position: absolute;
+                transform: rotate(135deg);
+              }
+              &_center {
+                position: absolute;
+                transform: rotate(-135deg);
+              }
+              &_bottom {
+                display: none;
+              }
+            }
+          }
         }
       }
     }

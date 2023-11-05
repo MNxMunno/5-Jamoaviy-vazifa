@@ -1,7 +1,170 @@
+@font-face {
+  font-family: Poppins;
+  src: url(../../fonts/Poppins-Regular.ttf);
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.5);
+  padding: 27px 0;
+  background-color: #232536;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+header nav .logo svg {
+  fill: #fff;
+}
+header nav .nav_items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+header nav .nav_items .nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+header nav .nav_items .nav-items a {
+  color: #fff;
+  /* Text link */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  opacity: 0.6;
+  transition: 0.5s;
+  position: relative;
+}
+header nav .nav_items .nav-items a svg {
+  fill: #fff;
+  opacity: 0.6;
+}
+header nav .nav_items .nav-items a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: #ffa155;
+  transition: 0.5s;
+  top: -28px;
+}
+header nav .nav_items .nav-items a:hover {
+  color: #ffd3af;
+}
+header nav .nav_items .nav-items a:hover::before {
+  width: 100%;
+}
+header nav .nav_items .nav-items a:hover svg {
+  fill: #ffd3af;
+}
+header nav .nav_items .nav-btn #dark-light {
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 44px;
+  overflow: hidden;
+  border: 0;
+  /* Checked */
+  /* Other States */
+}
+header nav .nav_items .nav-btn #dark-light .l {
+  display: block;
+  margin-bottom: 1.5em;
+  font-size: 1em;
+  cursor: pointer;
+}
+header nav .nav_items .nav-btn #dark-light .l {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0.75em;
+  box-shadow: 0.125em 0.125em 0 0.125em rgba(0, 0, 0, 0.3) inset;
+  color: #fdea7b;
+  display: inline-flex;
+  align-items: center;
+  margin: auto;
+  padding: 0.15em;
+  width: 3em;
+  height: 1.5em;
+  transition: background-color 0.1s 0.3s ease-out, box-shadow 0.1s 0.3s ease-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+header nav .nav_items .nav-btn #dark-light .l:before,
+header nav .nav_items .nav-btn #dark-light .l:after {
+  content: "";
+  display: block;
+}
+header nav .nav_items .nav-btn #dark-light .l:before {
+  background-color: #d7d7d7;
+  border-radius: 50%;
+  width: 1.2em;
+  height: 1.2em;
+  transition: background-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+  z-index: 1;
+}
+header nav .nav_items .nav-btn #dark-light .l:after {
+  background: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.15) 0) 0 50%/50% 100%, repeating-linear-gradient(90deg, #bbb 0, #bbb, #bbb 20%, #999 20%, #999 40%) 0 50%/50% 100%, radial-gradient(circle at 50% 50%, #888 25%, transparent 26%);
+  background-repeat: no-repeat;
+  border: 0.25em solid transparent;
+  border-left: 0.4em solid #d8d8d8;
+  border-right: 0 solid transparent;
+  transition: border-left-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+  transform: translateX(-22.5%);
+  transform-origin: 25% 50%;
+  width: 1.2em;
+  height: 1em;
+  box-sizing: border-box;
+}
+header nav .nav_items .nav-btn #dark-light .l:checked {
+  background-color: rgba(0, 0, 0, 0.45);
+  box-shadow: 0.125em 0.125em 0 0.125em rgba(0, 0, 0, 0.1) inset;
+}
+header nav .nav_items .nav-btn #dark-light .l:checked:before {
+  background-color: currentColor;
+  transform: translateX(125%);
+}
+header nav .nav_items .nav-btn #dark-light .l:checked:after {
+  border-left-color: currentColor;
+  transform: translateX(-2.5%) rotateY(180deg);
+}
+header nav .nav_items .nav-btn #dark-light .l:focus {
+  /* Usually an anti-A11Y practice but set to remove an annoyance just for this demo */
+  outline: 0;
+}
+@media only screen and (max-width: 999px) {
+  header nav .nav-items {
+    display: none;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  padding-top: 90px;
+}
+
+.dark header {
+  background-color: #555;
+}
+
+.dark .logo svg {
+  fill: #000;
+}
+
+.dark a {
+  color: #000;
 }
 
 a {

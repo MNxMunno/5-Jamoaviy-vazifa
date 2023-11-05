@@ -1,7 +1,26 @@
+@use "layout" as *;
+@use "pages" as *;
+@use "themes" as *;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  padding-top: 90px;
+}
+
+.dark header {
+  background-color: #555;
+}
+
+.dark .logo svg {
+  fill: #000;
+}
+
+.dark a {
+  color: #000;
 }
 
 a {

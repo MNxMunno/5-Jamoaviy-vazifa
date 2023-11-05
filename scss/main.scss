@@ -11,8 +11,31 @@ body {
   padding-top: 90px;
 }
 
+::-webkit-scrollbar {
+  background-color: #aaa;
+  width: 9px;
+  &:hover {
+    background-color: #696969;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $color-one;
+  border-radius: 8px;
+  transition: 0.5s;
+  &:hover {
+    background-color: #9a9999;
+  }
+}
+
 .dark header {
   background-color: #555;
+}
+
+@media only screen and (max-width: 999px) {
+  .dark header nav .nav_items .nav-items {
+    background-color: #333333d0;
+  }
 }
 
 .dark .logo svg {
@@ -21,6 +44,9 @@ body {
 
 .dark a {
   color: #000;
+}
+.dark {
+  color: #421818 !important;
 }
 
 a {

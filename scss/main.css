@@ -140,7 +140,7 @@ header nav .nav_items .nav-btn #dark-light .l:focus {
   outline: 0;
 }
 @media only screen and (max-width: 999px) {
-  header nav .nav-items {
+  header nav .nav_items .nav-items {
     display: none;
   }
 }

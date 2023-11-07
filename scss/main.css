@@ -373,6 +373,10 @@ header nav .nav_items .nav-btn .burger_menu {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding-top: 90px;
 }

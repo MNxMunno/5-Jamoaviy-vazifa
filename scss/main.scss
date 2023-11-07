@@ -42,12 +42,17 @@ body {
   fill: #000;
 }
 
-.dark a {
-  color: #000;
-}
 .dark {
-  color: #421818 !important;
+  background-color: #888 !important;
 }
+
+.dark {
+  color: #fff !important;
+}
+
+// .dark a {
+//   color: #000;
+// }
 
 a {
   text-decoration: none;

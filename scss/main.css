@@ -368,6 +368,241 @@ header nav .nav_items .nav-btn .burger_menu {
     width: 100vw;
   }
 }
+.career-main-section {
+  font-family: Poppins;
+}
+.career-main-section .career-hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 24px;
+  margin: 96px 0;
+}
+.career-main-section .career-hero-content span {
+  color: var(--Black, #232536);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.career-main-section .career-hero-content h2 {
+  color: var(--Black, #232536);
+  text-align: center;
+  /* H2 Heading */
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 58px; /* 120.833% */
+  max-width: 624px;
+  width: 100%;
+}
+.career-main-section .career-hero-content p {
+  color: var(--Black, #232536);
+  text-align: center;
+  /* Paragraph */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  max-width: 624px;
+  width: 100%;
+}
+.career-main-section .career-hero-content .text-image h1 {
+  max-width: 835.6px;
+  width: 100%;
+  height: auto;
+  font-weight: 900px;
+  font-family: "Poppins", sans-serif;
+  font-size: 200px;
+  background-image: url(../../images/Shahboz/Career-bg.png);
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-size: cover;
+  color: transparent;
+}
+
+.position-content {
+  background: #ECF8F9;
+  max-width: 1280px;
+  width: 100%;
+  flex-shrink: 0;
+  margin-bottom: 96px;
+}
+.position-content .position-cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 78px;
+  padding-bottom: 78px;
+  justify-content: center;
+  gap: 32px;
+}
+.position-content .position-cards .p-card {
+  max-width: 354px;
+  width: 100%;
+  height: 243px;
+  flex-shrink: 0;
+  background: #fff;
+  padding: 48px 0 0 48px;
+}
+.position-content .position-cards .p-card h6 {
+  color: var(--Black, #232536);
+  /* H6 Heading */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 175% */
+  margin-bottom: 8px;
+}
+.position-content .position-cards .p-card p {
+  color: var(--Black, #232536);
+  opacity: 0.6;
+  /* Paragraph */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.position-content .position-cards .p-card p:nth-child(3) {
+  margin-bottom: 52px;
+}
+.position-content .position-cards .p-card a {
+  color: var(--iris-100, #5D5FEF);
+  /* Text link */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.position-content .position-cards .p-card a svg {
+  fill: #5D5FEF;
+}
+.position-content .position-cards .p-card a:hover {
+  color: #ffd467;
+  transition: 0.5s;
+}
+.position-content .position-cards .p-card a:hover svg {
+  fill: #ffd467;
+  transition: 0.5s;
+}
+.position-content .position-cards .p-card:hover {
+  box-shadow: 1px 1px 10px 1px #5D5FEF;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+
+.work-and-culture-section {
+  background: #FAFAFC;
+}
+.work-and-culture-section .work-and-culture-content {
+  padding: 96px 0;
+}
+.work-and-culture-section .work-and-culture-content span {
+  color: #000;
+  opacity: 0.87;
+  /* Caption */
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.work-and-culture-section .work-and-culture-content h3 {
+  color: #232536;
+  max-width: 624px;
+  width: 100%;
+  /* H3 Heading */
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px; /* 150% */
+  margin: 16px 0 24px 0;
+}
+.work-and-culture-section .work-and-culture-content p {
+  color: #232536;
+  opacity: 0.6;
+  /* Paragraph */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  max-width: 624px;
+  width: 100%;
+  margin-bottom: 64px;
+}
+.work-and-culture-section .work-and-culture-content .w-c-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+.work-and-culture-section .work-and-culture-content .w-c-cards .wc-card {
+  max-width: 418px;
+  width: 100%;
+  height: 200px;
+  flex-shrink: 0;
+  background: #fff;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.work-and-culture-section .work-and-culture-content .w-c-cards .wc-card:hover {
+  box-shadow: 1px 1px 20px 1px #ffd467;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 900px) {
+  .career-main-section .work-and-culture-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  .career-main-section .work-and-culture-content span {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .career-main-section .work-and-culture-content h3 {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .career-main-section .work-and-culture-content p {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .career-main-section .wc-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .career-main-section h3 {
+    font-size: 28px !important;
+  }
+  .career-main-section h2 {
+    font-size: 32px !important;
+    line-height: 8px;
+  }
+}
 * {
   margin: 0;
   padding: 0;

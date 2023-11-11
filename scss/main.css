@@ -1520,7 +1520,7 @@ header nav .nav_items .nav-btn .burger_menu {
 .hero__home__home .home---content .cards .card {
   max-width: 624px;
   padding-top: 96px;
-  padding-bottom: 33px;
+  padding-bottom: 50px;
 }
 .hero__home__home .home---content .cards .card h1 {
   color: #fff;
@@ -1553,7 +1553,7 @@ header nav .nav_items .nav-btn .burger_menu {
   gap: 32px;
   flex-wrap: wrap;
 }
-.hero__home__home .home---content .logos .titles p {
+.hero__home__home .home---content .logos .home__titles p {
   color: #fff;
   /* Paragraph Small */
   font-family: Poppins;
@@ -1562,7 +1562,7 @@ header nav .nav_items .nav-btn .burger_menu {
   font-weight: 500;
   line-height: 20px; /* 142.857% */
 }
-.hero__home__home .home---content .logos .titles b {
+.hero__home__home .home---content .logos .home__titles b {
   color: #fff;
   /* Paragraph Large */
   font-family: Poppins;
@@ -1571,13 +1571,13 @@ header nav .nav_items .nav-btn .burger_menu {
   font-weight: 500;
   line-height: 28px; /* 155.556% */
 }
-.hero__home__home .home---content .logos svg {
+.hero__home__home .home---content .logos .svgg {
   fill: #fff;
   fill-opacity: 0.45;
   cursor: pointer;
   transition: 0.4s;
 }
-.hero__home__home .home---content .logos svg:hover {
+.hero__home__home .home---content .logos .svgg:hover {
   fill: #000;
 }
 @media only screen and (max-width: 1172px) {
@@ -1652,8 +1652,14 @@ header nav .nav_items .nav-btn .burger_menu {
   gap: 11px;
   padding-bottom: 48px;
 }
+.home__about__us .about__us-content .cards2 .card {
+  transition: 0.5s;
+}
 .home__about__us .about__us-content .cards2 .card img {
   width: 100%;
+}
+.home__about__us .about__us-content .cards2 .card:hover {
+  box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.5);
 }
 .home__about__us .about__us-content .cards3 {
   display: flex;
@@ -1801,6 +1807,7 @@ header nav .nav_items .nav-btn .burger_menu {
   gap: 16px;
   padding: 32px;
   border-radius: 8px;
+  transition: 0.5s;
 }
 .home__our__expertise .home__expertise-cards .card .cardd h6 {
   color: #000;
@@ -1822,6 +1829,9 @@ header nav .nav_items .nav-btn .burger_menu {
 }
 .home__our__expertise .home__expertise-cards .card .cardd + .cardd {
   margin-top: 12px;
+}
+.home__our__expertise .home__expertise-cards .card .cardd:hover {
+  box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.5);
 }
 @media only screen and (max-width: 888px) {
   .home__our__expertise .home__expertise-cards .card h5 {
@@ -1862,6 +1872,7 @@ header nav .nav_items .nav-btn .burger_menu {
   width: 405px;
   background: #fff;
   padding: 48px 31px 44px 48px;
+  transition: 0.5s;
 }
 .home__our__services .services___content .cards .card h6 {
   color: #000;
@@ -1893,6 +1904,9 @@ header nav .nav_items .nav-btn .burger_menu {
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 150% */
+}
+.home__our__services .services___content .cards .card:hover {
+  box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.2);
 }
 @media only screen and (max-width: 888px) {
   .home__our__services .services___content h5 {

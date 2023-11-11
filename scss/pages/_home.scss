@@ -14,7 +14,7 @@
       .card {
         max-width: 624px;
         padding-top: 96px;
-        padding-bottom: 33px;
+        padding-bottom: 50px;
         h1 {
           color: #fff;
           padding-top: 24px;
@@ -48,7 +48,7 @@
       justify-content: center;
       gap: 32px;
       flex-wrap: wrap;
-      .titles {
+      .home__titles {
         p {
           color: #fff;
 
@@ -70,13 +70,13 @@
           line-height: 28px; /* 155.556% */
         }
       }
-      svg {
+      .svgg {
         fill: #fff;
         fill-opacity: 0.45;
         cursor: pointer;
         transition: 0.4s;
       }
-      svg:hover {
+      .svgg:hover {
         fill: #000;
       }
     }
@@ -178,6 +178,10 @@
         img {
           width: 100%;
         }
+        transition: 0.5s;
+      }
+      .card:hover {
+        box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.5);
       }
     }
     .cards3 {
@@ -358,6 +362,7 @@
         gap: 16px;
         padding: 32px;
         border-radius: 8px;
+        transition: 0.5s;
         h6 {
           color: #000;
 
@@ -381,6 +386,10 @@
       }
       .cardd + .cardd {
         margin-top: 12px;
+      }
+
+      .cardd:hover {
+        box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.5);
       }
     }
   }
@@ -431,6 +440,7 @@
         width: 405px;
         background: #fff;
         padding: 48px 31px 44px 48px;
+        transition: 0.5s;
         h6 {
           color: #000;
 
@@ -467,6 +477,9 @@
           font-weight: 500;
           line-height: 24px; /* 150% */
         }
+      }
+      .card:hover {
+        box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.2);
       }
     }
   }

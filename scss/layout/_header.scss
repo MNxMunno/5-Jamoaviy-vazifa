@@ -8,6 +8,7 @@ header {
   box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.5);
   padding: 27px 0;
   background-color: $color-one;
+  z-index: 100;
   nav {
     display: flex;
     align-items: center;

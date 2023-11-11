@@ -1,0 +1,211 @@
+@use "../themes" as *;
+
+.hero__home__home {
+  background-color: $color-one;
+
+  .home---content {
+    padding-bottom: 62px;
+    .cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      .card {
+        max-width: 624px;
+        padding-top: 96px;
+        padding-bottom: 33px;
+        h1 {
+          color: #fff;
+          padding-top: 24px;
+          /* H1 Heading */
+          font-family: Poppins;
+          font-size: 56px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 68px; /* 121.429% */
+        }
+        p {
+          max-width: 528px;
+          color: #fff;
+
+          /* Paragraph */
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px; /* 150% */
+          padding: 24px 0 32px;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      .titles {
+        p {
+          color: #fff;
+
+          /* Paragraph Small */
+          font-family: Poppins;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px; /* 142.857% */
+        }
+        b {
+          color: #fff;
+
+          /* Paragraph Large */
+          font-family: Poppins;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28px; /* 155.556% */
+        }
+      }
+      svg {
+        fill: #fff;
+        fill-opacity: 0.45;
+        cursor: pointer;
+        transition: 0.4s;
+      }
+      svg:hover {
+        fill: #000;
+      }
+    }
+  }
+  @media only screen and (max-width: 1172px) {
+    .home---content {
+      .cards {
+        .card {
+          h1 {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .home---content {
+      .cards {
+        .card {
+          h1 {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.home__about__us {
+  padding: 120px 0 98px;
+  .about__us-content {
+    .cards1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+      .card {
+        p {
+          color: #000;
+
+          /* Caption */
+          font-family: Poppins;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px; /* 142.857% */
+          letter-spacing: 3px;
+          text-transform: uppercase;
+        }
+
+        h2 {
+          max-width: 640px;
+          color: $color-one;
+          padding-top: 16px;
+          /* H2 Heading */
+          font-family: Poppins;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 58px; /* 120.833% */
+        }
+
+        h3 {
+          max-width: 507px;
+          color: #232536;
+
+          /* H2 Heading */
+          font-family: Poppins;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 58px; /* 120.833% */
+        }
+
+        .text2 {
+          max-width: 507px;
+          color: #5d5f6d;
+
+          /* Paragraph */
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px; /* 150% */
+          padding-top: 16px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1219px) {
+    .about__us-content {
+      .cards1 {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 32px;
+        flex-wrap: wrap;
+      }
+    }
+  }
+  @media only screen and (max-width: 888px) {
+    .about__us-content {
+      .cards1 {
+        .card {
+          h2 {
+            font-size: 32px;
+          }
+          h3 {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 444px) {
+    .about__us-content {
+      .cards1 {
+        .card {
+          h2 {
+            font-size: 28px;
+            line-height: 38px;
+          }
+          h3 {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}

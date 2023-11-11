@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  padding-top: 90px;
+  padding-top: 83px;
 }
 
 ::-webkit-scrollbar {
@@ -49,6 +49,14 @@ body {
 
 .dark {
   background-color: #888 !important;
+}
+
+.dark .hero__home__home {
+  background-color: #888 !important;
+}
+
+.dark main .hero__home {
+  background-color: #777 !important;
 }
 
 .dark {

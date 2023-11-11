@@ -2033,6 +2033,94 @@ header nav .nav_items .nav-btn .burger_menu {
 .our-process .our-process-content .process-cards .pro-cards:hover .card-hover {
   display: block;
 }
+
+.home__read {
+  background-color: #ecf8f9;
+}
+.home__read .read__content {
+  padding: 131px 0 96px;
+}
+.home__read .read__content h6 {
+  color: #232536;
+  /* H2 Heading */
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 58px; /* 120.833% */
+}
+.home__read .read__content .cards {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  justify-content: space-between;
+}
+.home__read .read__content .cards .card {
+  width: 624px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.home__read .read__content .cards .card img {
+  width: 100%;
+  max-width: 296px;
+}
+.home__read .read__content .cards .card .texts {
+  padding: 32px;
+}
+.home__read .read__content .cards .card .texts p {
+  color: #232536;
+  /* Paragraph Small */
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  opacity: 0.6;
+}
+.home__read .read__content .cards .card .texts h6 {
+  padding: 8px 0 24px;
+  color: #232536;
+  /* H4 Heading */
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px; /* 150% */
+}
+.home__read .read__content .cards .card .texts a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #444cfc;
+  /* Text link */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+@media only screen and (max-width: 700px) {
+  .home__read .read__content h6 {
+    font-size: 32px;
+  }
+  .home__read .read__content .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .home__read .read__content .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
 .text h1 {
   width: 620px;
   color: #232536;

@@ -167,6 +167,7 @@ header {
   box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.5);
   padding: 27px 0;
   background-color: #232536;
+  z-index: 100;
 }
 header nav {
   display: flex;
@@ -1073,10 +1074,10 @@ header nav .nav_items .nav-btn .burger_menu {
 }
 
 :root {
-  --primary-color: #444CFC;
+  --primary-color: #444cfc;
   --seconday-color: #000682;
-  --milky-color: #FFE6D2;
-  --orange-color: #FFA155;
+  --milky-color: #ffe6d2;
+  --orange-color: #ffa155;
   --dark: #232536;
 }
 
@@ -1135,7 +1136,7 @@ header {
   justify-content: center;
   gap: 12px;
   width: 264px;
-  color: #FFF;
+  color: #fff;
   opacity: 0.87;
   font-family: Poppins;
   font-size: 16px;
@@ -1215,7 +1216,7 @@ header {
   }
 }
 .our-process {
-  background: #F9F9FF;
+  background: #f9f9ff;
 }
 .our-process .our-process-content {
   position: relative;
@@ -1395,7 +1396,7 @@ header {
 }
 
 .Development {
-  background: #ECF8F9;
+  background: #ecf8f9;
 }
 .Development .dev-content {
   display: flex;
@@ -1479,7 +1480,7 @@ header {
 }
 
 .Consulting {
-  background: #F9F9FF;
+  background: #f9f9ff;
 }
 .Consulting .Consulting-content {
   display: flex;

@@ -108,8 +108,8 @@
 }
 
 .home__about__us {
-  padding: 120px 0 98px;
   .about__us-content {
+    padding: 120px 0 98px;
     .cards1 {
       display: flex;
       align-items: center;
@@ -309,8 +309,8 @@
 
 .home__our__expertise {
   background: #c8e6e9;
-  padding: 112px 0 96px;
   .home__expertise-cards {
+    padding: 112px 0 96px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -501,7 +501,7 @@
   }
 }
 
-.our-process {
+.home__our-process {
   background: #f9f9ff;
   .our-process-content {
     position: relative;
@@ -613,6 +613,161 @@
       }
     }
   }
-  @media only screen and (max-width) {
+}
+
+.home__read {
+  background-color: #ecf8f9;
+  // height: 100vh;
+  .read__content {
+    padding: 131px 0 96px;
+    h6 {
+      color: #232536;
+
+      /* H2 Heading */
+      font-family: Poppins;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 58px; /* 120.833% */
+    }
+    .cards {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      justify-content: space-between;
+      .card {
+        width: 624px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        border-radius: 8px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          max-width: 296px;
+        }
+
+        .texts {
+          padding: 32px;
+          p {
+            color: #232536;
+
+            /* Paragraph Small */
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px; /* 142.857% */
+            opacity: 0.6;
+          }
+
+          h6 {
+            padding: 8px 0 24px;
+            color: #232536;
+
+            /* H4 Heading */
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 36px; /* 150% */
+          }
+          a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #444cfc;
+
+            /* Text link */
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; /* 150% */
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .read__content {
+      h6 {
+        font-size: 32px;
+      }
+      .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        .card {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}
+
+.home__newsletter {
+  .home__new-content {
+    padding: 96px;
+    background: var(--secondary-blue, #666dff);
+    .cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      .card {
+        p {
+          color: #fff;
+
+          /* Caption */
+          font-family: Poppins;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px; /* 142.857% */
+          letter-spacing: 3px;
+          text-transform: uppercase;
+        }
+
+        h6 {
+          max-width: 488px;
+          color: #fff;
+          padding-top: 13px;
+          padding-bottom: 96px;
+          /* H3 Heading */
+          font-family: Poppins;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 54px; /* 150% */
+        }
+        input {
+          width: 100%;
+          outline: none;
+          border: 0;
+
+          color: #232536;
+          text-align: right;
+
+          /* Text link */
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px; /* 150% */
+        }
+      }
+
+      .card2 {
+        width: 454px;
+        height: 64px;
+      }
+    }
   }
 }

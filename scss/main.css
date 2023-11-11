@@ -1047,11 +1047,22 @@ header nav .nav_items .nav-btn .burger_menu {
 .hero__home__home {
   background-color: #232536;
 }
-.hero__home__home .cards .card {
+.hero__home__home .home---content {
+  padding-bottom: 62px;
+}
+.hero__home__home .home---content .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.hero__home__home .home---content .cards .card {
   max-width: 624px;
   padding-top: 96px;
+  padding-bottom: 33px;
 }
-.hero__home__home .cards .card h1 {
+.hero__home__home .home---content .cards .card h1 {
   color: #fff;
   padding-top: 24px;
   /* H1 Heading */
@@ -1061,7 +1072,7 @@ header nav .nav_items .nav-btn .burger_menu {
   font-weight: 600;
   line-height: 68px; /* 121.429% */
 }
-.hero__home__home .cards .card p {
+.hero__home__home .home---content .cards .card p {
   max-width: 528px;
   color: #fff;
   /* Paragraph */
@@ -1071,6 +1082,133 @@ header nav .nav_items .nav-btn .burger_menu {
   font-weight: 400;
   line-height: 24px; /* 150% */
   padding: 24px 0 32px;
+}
+.hero__home__home .home---content .cards .card img {
+  width: 100%;
+}
+.hero__home__home .home---content .logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.hero__home__home .home---content .logos .titles p {
+  color: #fff;
+  /* Paragraph Small */
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+.hero__home__home .home---content .logos .titles b {
+  color: #fff;
+  /* Paragraph Large */
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 155.556% */
+}
+.hero__home__home .home---content .logos svg {
+  fill: #fff;
+  fill-opacity: 0.45;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.hero__home__home .home---content .logos svg:hover {
+  fill: #000;
+}
+@media only screen and (max-width: 1172px) {
+  .hero__home__home .home---content .cards .card h1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .hero__home__home .home---content .cards .card h1 {
+    font-size: 18px;
+  }
+}
+
+.home__about__us {
+  padding: 120px 0 98px;
+}
+.home__about__us .about__us-content .cards1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.home__about__us .about__us-content .cards1 .card p {
+  color: #000;
+  /* Caption */
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.home__about__us .about__us-content .cards1 .card h2 {
+  max-width: 640px;
+  color: #232536;
+  padding-top: 16px;
+  /* H2 Heading */
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 58px; /* 120.833% */
+}
+.home__about__us .about__us-content .cards1 .card h3 {
+  max-width: 507px;
+  color: #232536;
+  /* H2 Heading */
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 58px; /* 120.833% */
+}
+.home__about__us .about__us-content .cards1 .card .text2 {
+  max-width: 507px;
+  color: #5d5f6d;
+  /* Paragraph */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  padding-top: 16px;
+}
+@media only screen and (max-width: 1219px) {
+  .home__about__us .about__us-content .cards1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 888px) {
+  .home__about__us .about__us-content .cards1 .card h2 {
+    font-size: 32px;
+  }
+  .home__about__us .about__us-content .cards1 .card h3 {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 444px) {
+  .home__about__us .about__us-content .cards1 .card h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .home__about__us .about__us-content .cards1 .card h3 {
+    font-size: 24px;
+  }
 }
 
 :root {
@@ -1609,6 +1747,10 @@ body {
 }
 
 .dark {
+  background-color: #888 !important;
+}
+
+.dark .hero__home__home {
   background-color: #888 !important;
 }
 

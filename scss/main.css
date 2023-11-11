@@ -1552,6 +1552,7 @@ header nav .nav_items .nav-btn .burger_menu {
   justify-content: center;
   gap: 32px;
   flex-wrap: wrap;
+  padding-top: 33px;
 }
 .hero__home__home .home---content .logos .home__titles p {
   color: #fff;

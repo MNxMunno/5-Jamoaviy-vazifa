@@ -1076,6 +1076,10 @@ header nav .nav_items .nav-btn .burger_menu {
   padding: 0 20px;
 }
 
+main {
+  padding-top: 96px;
+}
+
 .company-hero {
   padding-bottom: 96px;
 }
@@ -1194,6 +1198,7 @@ header nav .nav_items .nav-btn .burger_menu {
   gap: 30px 150px;
   max-width: 624px;
   background: rgba(255, 211, 175, 0.57);
+  flex-wrap: wrap;
 }
 .result .result-content .experience .level h3 {
   color: var(--Black, #232536);
@@ -1380,27 +1385,8 @@ header nav .nav_items .nav-btn .burger_menu {
   opacity: 0.6;
   max-width: 622px;
 }
-.vision .vision-content .vision-img {
-  margin-top: 64px;
+.vision .vision-content .vision-img img {
   width: 100%;
-  background-image: url(../images/Abubakir/vision-img.png);
-  height: 360px;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.9;
-}
-.vision .vision-content .vision-img .vision-img-content {
-  display: none;
-}
-.vision .vision-content .vision-img .vision-img-content h1 {
-  font-size: 100px;
-  font-family: sans-serif;
-}
-.vision .vision-content:hover .vision-img-content {
-  display: block;
 }
 
 .team .team-content h6 {
@@ -1439,53 +1425,14 @@ header nav .nav_items .nav-btn .burger_menu {
 }
 .team .team-content .team-images {
   padding-top: 64px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-.team .team-content .team-images .team-user-1 {
-  background: url(../images/Abubakir/Team\ 1.png);
-  background-repeat: no-repeat;
-  height: 320px;
-}
-.team .team-content .team-images .team-user-2 {
-  background: url(../images/Abubakir/Team\ 2.png);
-  background-repeat: no-repeat;
-  height: 320px;
-}
-.team .team-content .team-images .team-user-3 {
-  background: url(../images/Abubakir/Team\ 3.png);
-  background-repeat: no-repeat;
-  height: 320px;
-}
-.team .team-content .team-images .team-user-4 {
-  background: url(../images/Abubakir/Team\ 4.png);
-  background-repeat: no-repeat;
-  height: 320px;
-}
-.team .team-content .team-images .team-user-5 {
-  background: url(../images/Abubakir/Team\ 5.png);
-  background-repeat: no-repeat;
-  height: 320px;
-}
-.team .team-content .team-images .team-user-6 {
-  background: url(../images/Abubakir/Team\ 6.png);
-  background-repeat: no-repeat;
-  height: 320px;
-}
-.team .team-content .team-images .team-user-7 {
-  background: url(../images/Abubakir/Team\ 7.png);
-  background-repeat: no-repeat;
-  height: 320px;
-}
-.team .team-content .team-images .team-user-8 {
-  background: url(../images/Abubakir/Team\ 8.png);
-  background-repeat: no-repeat;
-  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 1215px) {
-  .hero .hero-content .hero-colors {
+  .company-hero .hero-content .hero-colors {
     margin-right: 9%;
   }
   .result .result-content .texts h3 {
@@ -1502,6 +1449,102 @@ header nav .nav_items .nav-btn .burger_menu {
     width: 100%;
     max-width: 100%;
     gap: 0;
+  }
+  .team .team-content .team-images {
+    justify-content: space-around;
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 1175px) {
+  .company-hero .hero-content {
+    text-align: center;
+  }
+  .company-hero .hero-content h2 {
+    max-width: 100%;
+  }
+  .company-hero .hero-content p {
+    max-width: 100%;
+  }
+  .super .super-contant {
+    justify-content: center;
+  }
+  .super .super-contant .super-texts {
+    max-width: 88%;
+    text-align: center;
+  }
+  .super .super-contant .best {
+    padding-top: 50px;
+    width: 100%;
+  }
+  .super .super-contant .best .best-card {
+    width: 100%;
+  }
+  .super .super-contant .best .best-card .best-card-content {
+    justify-content: center;
+  }
+  .super .super-contant .best .best-card .best-card-content .best-texts {
+    max-width: 88%;
+  }
+  .super .super-contant .best .best-colors .orenge {
+    width: 30%;
+  }
+  .super .super-contant .best .best-colors .human-color {
+    width: 45%;
+  }
+  .super .super-contant .best .best-colors .blue {
+    width: 25%;
+  }
+  .vision .vision-content {
+    text-align: center;
+  }
+  .vision .vision-content h3 {
+    max-width: 100%;
+  }
+  .vision .vision-content p {
+    max-width: 100%;
+    padding-bottom: 40px;
+  }
+  .team {
+    padding-bottom: 50px;
+  }
+  .team .team-content {
+    text-align: center;
+  }
+  .team .team-content h2 {
+    max-width: 100%;
+  }
+  .team .team-content p {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .company-hero .hero-content h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .result .result-content .texts {
+    text-align: center;
+  }
+  .result .result-content .texts p {
+    max-width: 100%;
+  }
+  .result .result-content .experience {
+    justify-content: space-around;
+  }
+  .result .result-content .experience .level {
+    min-width: 130px;
+  }
+  .super .super-contant .super-texts h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .vision .vision-content h3 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .team .team-content h2 {
+    font-size: 28px;
+    line-height: 40px;
   }
 }
 .contact section:first-child .first-section {

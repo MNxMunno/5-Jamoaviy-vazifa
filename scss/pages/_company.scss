@@ -12,6 +12,10 @@
   padding: 0 20px;
 }
 
+main {
+  padding-top: 96px;
+}
+
 .company-hero {
   padding-bottom: 96px;
   .hero-content {
@@ -146,6 +150,7 @@
       gap: 30px 150px;
       max-width: 624px;
       background: rgba(255, 211, 175, 0.57);
+      flex-wrap: wrap;
       .level {
         h3 {
           color: var(--Black, #232536);
@@ -234,6 +239,41 @@
       }
     }
     .best {
+      // .middle {
+      //   position: absolute;
+      //   .btn {
+      //     background: none;
+      //     border: 2px solid #000;
+      //     font-family: sans-serif;
+      //     text-transform: uppercase;
+      //     padding: 12px 20px;
+      //     min-width: 200px;
+      //     margin: 10px;
+      //     cursor: pointer;
+      //     transition: color 0.4s linear;
+      //     position: relative;
+      //     &:hover {
+      //       color: #fff;
+      //     }
+      //     &:hover::before {
+      //       transform: scaleX(1);
+      //     }
+      //     &::before {
+      //       content: "";
+      //       position: absolute;
+      //       left: 0;
+      //       top: 0;
+      //       width: 100%;
+      //       height: 100%;
+      //       background: #000;
+      //       z-index: -1;
+      //       transition: transform 0.5s;
+      //       transform-origin: 0 0;
+      //       transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+      //       transform: scaleX(0);
+      //     }
+      //   }
+      // }
       .best-card {
         background-color: #fff;
         width: 515px;
@@ -348,29 +388,32 @@
       max-width: 622px;
     }
     .vision-img {
-      margin-top: 64px;
-      width: 100%;
-      background-image: url(../images/Abubakir/vision-img.png);
-      // mix-blend-mode: luminosity;
-      height: 360px;
-      background-position: center;
-      background-size: cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0.9;
-      .vision-img-content {
-        display: none;
-        h1 {
-          font-size: 100px;
-          font-family: sans-serif;
-        }
+      img {
+        width: 100%;
       }
-    }
-    &:hover {
-      .vision-img-content {
-        display: block;
-      }
+      //   margin-top: 64px;
+      //   width: 100%;
+      //   background-image: url(../images/Abubakir/vision-img.png);
+      //   // mix-blend-mode: luminosity;
+      //   height: 360px;
+      //   background-position: center;
+      //   background-size: cover;
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: center;
+      //   opacity: 0.9;
+      //   .vision-img-content {
+      //     display: none;
+      //     h1 {
+      //       font-size: 100px;
+      //       font-family: sans-serif;
+      //     }
+      //   }
+      // }
+      // &:hover {
+      //   .vision-img-content {
+      //     display: block;
+      //   }
     }
   }
 }
@@ -416,59 +459,60 @@
     }
     .team-images {
       padding-top: 64px;
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
       // width: 100%;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      .team-user-1 {
-        background: url(../images/Abubakir/Team\ 1.png);
-        background-repeat: no-repeat;
-        height: 320px;
-      }
-      .team-user-2 {
-        background: url(../images/Abubakir/Team\ 2.png);
-        background-repeat: no-repeat;
-        height: 320px;
-      }
-      .team-user-3 {
-        background: url(../images/Abubakir/Team\ 3.png);
-        background-repeat: no-repeat;
-        height: 320px;
-      }
-      .team-user-4 {
-        background: url(../images/Abubakir/Team\ 4.png);
-        background-repeat: no-repeat;
-        height: 320px;
-      }
-      .team-user-5 {
-        background: url(../images/Abubakir/Team\ 5.png);
-        background-repeat: no-repeat;
-        height: 320px;
-      }
-      .team-user-6 {
-        background: url(../images/Abubakir/Team\ 6.png);
-        background-repeat: no-repeat;
-        height: 320px;
-      }
-      .team-user-7 {
-        background: url(../images/Abubakir/Team\ 7.png);
-        background-repeat: no-repeat;
-        height: 320px;
-      }
-      .team-user-8 {
-        background: url(../images/Abubakir/Team\ 8.png);
-        background-repeat: no-repeat;
-        height: 320px;
-      }
+      //   display: grid;
+      //   grid-template-columns: repeat(4, 1fr);
+      //   grid-template-rows: repeat(2, 1fr);
+      //   .team-user-1 {
+      //     background: url(../images/Abubakir/Team\ 1.png);
+      //     background-repeat: no-repeat;
+      //     height: 320px;
+      //   }
+      //   .team-user-2 {
+      //     background: url(../images/Abubakir/Team\ 2.png);
+      //     background-repeat: no-repeat;
+      //     height: 320px;
+      //   }
+      //   .team-user-3 {
+      //     background: url(../images/Abubakir/Team\ 3.png);
+      //     background-repeat: no-repeat;
+      //     height: 320px;
+      //   }
+      //   .team-user-4 {
+      //     background: url(../images/Abubakir/Team\ 4.png);
+      //     background-repeat: no-repeat;
+      //     height: 320px;
+      //   }
+      //   .team-user-5 {
+      //     background: url(../images/Abubakir/Team\ 5.png);
+      //     background-repeat: no-repeat;
+      //     height: 320px;
+      //   }
+      //   .team-user-6 {
+      //     background: url(../images/Abubakir/Team\ 6.png);
+      //     background-repeat: no-repeat;
+      //     height: 320px;
+      //   }
+      //   .team-user-7 {
+      //     background: url(../images/Abubakir/Team\ 7.png);
+      //     background-repeat: no-repeat;
+      //     height: 320px;
+      //   }
+      //   .team-user-8 {
+      //     background: url(../images/Abubakir/Team\ 8.png);
+      //     background-repeat: no-repeat;
+      //     height: 320px;
+      //   }
     }
   }
 }
 
 @media only screen and (max-width: 1215px) {
-  .hero {
+  .company-hero {
     .hero-content {
       .hero-colors {
         margin-right: 9%;
@@ -496,4 +540,139 @@
       }
     }
   }
+  .team {
+    .team-content {
+      .team-images {
+        justify-content: space-around;
+        gap: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1175px) {
+  .company-hero {
+    .hero-content {
+      text-align: center;
+      h2 {
+        max-width: 100%;
+      }
+      p {
+        max-width: 100%;
+      }
+    }
+  }
+  .super {
+    .super-contant {
+      justify-content: center;
+      .super-texts {
+        max-width: 88%;
+        text-align: center;
+      }
+      .best {
+        padding-top: 50px;
+        width: 100%;
+        .best-card {
+          width: 100%;
+          .best-card-content {
+            justify-content: center;
+            .best-texts {
+              max-width: 88%;
+            }
+          }
+        }
+        .best-colors {
+          .orenge {
+            width: 30%;
+          }
+          .human-color {
+            width: 45%;
+          }
+          .blue {
+            width: 25%;
+          }
+        }
+      }
+    }
+  }
+  .vision {
+    .vision-content {
+      text-align: center;
+      h3 {
+        max-width: 100%;
+      }
+      p {
+        max-width: 100%;
+        padding-bottom: 40px;
+      }
+    }
+  }
+  .team {
+    padding-bottom: 50px;
+    .team-content {
+      text-align: center;
+      h2 {
+        max-width: 100%;
+      }
+      p {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .company-hero {
+    .hero-content {
+      h2 {
+        font-size: 32px;
+        line-height: 40px;
+      }
+    }
+  }
+  .result {
+    .result-content {
+      .texts {
+        text-align: center;
+        p {
+          max-width: 100%;
+        }
+      }
+      .experience {
+        justify-content: space-around;
+        .level {
+          min-width: 130px;
+        }
+      }
+    }
+  }
+  .super {
+    .super-contant {
+      .super-texts {
+        h2 {
+          font-size: 28px;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+  .vision {
+    .vision-content {
+      h3 {
+        font-size: 28px;
+        line-height: 40px;
+      }
+    }
+  }
+  .team {
+    .team-content {
+      h2 {
+        font-size: 28px;
+        line-height: 40px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
 }

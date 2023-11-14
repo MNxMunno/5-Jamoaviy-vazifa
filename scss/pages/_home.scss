@@ -15,6 +15,13 @@
         max-width: 624px;
         padding-top: 96px;
         padding-bottom: 50px;
+        .grey {
+          background: rgba(255, 255, 255, 0.06);
+          width: 24px;
+          height: 24px;
+          transform: rotate(-90deg);
+          flex-shrink: 0;
+        }
         h1 {
           color: #fff;
           padding-top: 24px;
@@ -36,6 +43,33 @@
           font-weight: 400;
           line-height: 24px; /* 150% */
           padding: 24px 0 32px;
+        }
+        a {
+          width: 219px;
+          background: #444cfc;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          color: #fff;
+          padding: 20px 32px;
+          border-radius: 8px;
+          transition: 0.4s;
+          /* Text link */
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px; /* 150% */
+          position: relative;
+          overflow: hidden;
+          #rgb {
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+        a:hover {
+          background-color: #3740dc;
         }
         img {
           width: 100%;

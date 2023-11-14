@@ -3,21 +3,6 @@
   font-family: Poppins;
   src: url(../../fonts/Poppins-Regular.ttf);
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  padding-top: 83px;
-}
-
 footer .footer__cards {
   display: flex;
   align-items: baseline;
@@ -1736,6 +1721,13 @@ header nav .nav_items .nav-btn .burger_menu {
   padding-top: 96px;
   padding-bottom: 50px;
 }
+.hero__home__home .home---content .cards .card .grey {
+  background: rgba(255, 255, 255, 0.06);
+  width: 24px;
+  height: 24px;
+  transform: rotate(-90deg);
+  flex-shrink: 0;
+}
 .hero__home__home .home---content .cards .card h1 {
   color: #fff;
   padding-top: 24px;
@@ -1756,6 +1748,33 @@ header nav .nav_items .nav-btn .burger_menu {
   font-weight: 400;
   line-height: 24px; /* 150% */
   padding: 24px 0 32px;
+}
+.hero__home__home .home---content .cards .card a {
+  width: 219px;
+  background: #444cfc;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  padding: 20px 32px;
+  border-radius: 8px;
+  transition: 0.4s;
+  /* Text link */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  position: relative;
+  overflow: hidden;
+}
+.hero__home__home .home---content .cards .card a #rgb {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hero__home__home .home---content .cards .card a:hover {
+  background-color: #3740dc;
 }
 .hero__home__home .home---content .cards .card img {
   width: 100%;
@@ -3766,6 +3785,19 @@ header {
   .j-card a {
     padding-left: 32px;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 83px;
 }
 
 ::-webkit-scrollbar {

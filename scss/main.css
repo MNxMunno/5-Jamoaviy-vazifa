@@ -3,6 +3,21 @@
   font-family: Poppins;
   src: url(../../fonts/Poppins-Regular.ttf);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 83px;
+}
+
 footer .footer__cards {
   display: flex;
   align-items: baseline;
@@ -274,7 +289,11 @@ header nav .nav_items .nav-btn #dark-light .l:before {
   z-index: 1;
 }
 header nav .nav_items .nav-btn #dark-light .l:after {
-  background: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.15) 0) 0 50%/50% 100%, repeating-linear-gradient(90deg, #bbb 0, #bbb, #bbb 20%, #999 20%, #999 40%) 0 50%/50% 100%, radial-gradient(circle at 50% 50%, #888 25%, transparent 26%);
+  background: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.15) 0) 0 50%/50%
+      100%,
+    repeating-linear-gradient(90deg, #bbb 0, #bbb, #bbb 20%, #999 20%, #999 40%)
+      0 50%/50% 100%,
+    radial-gradient(circle at 50% 50%, #888 25%, transparent 26%);
   background-repeat: no-repeat;
   border: 0.25em solid transparent;
   border-left: 0.4em solid #d8d8d8;
@@ -319,7 +338,7 @@ header nav .nav_items .nav-btn .burger_menu {
     transform: translateX(100%);
     transition: all 0.5s ease-in-out;
     -webkit-backdrop-filter: blur(3px);
-            backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
   }
   header nav .nav_items .nav-items a {
     font-size: 20px;
@@ -580,7 +599,7 @@ header nav .nav_items .nav-btn .burger_menu {
 }
 
 .im1 {
-  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
   width: 296px;
   height: 248px;
   flex-shrink: 0;
@@ -884,13 +903,13 @@ header nav .nav_items .nav-btn .burger_menu {
   font-size: 200px;
   background-image: url(../../images/Shahboz/Career-bg.png);
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   background-size: cover;
   color: transparent;
 }
 
 .position-content {
-  background: #ECF8F9;
+  background: #ecf8f9;
   max-width: 1280px;
   width: 100%;
   flex-shrink: 0;
@@ -936,7 +955,7 @@ header nav .nav_items .nav-btn .burger_menu {
   margin-bottom: 52px;
 }
 .position-content .position-cards .p-card a {
-  color: var(--iris-100, #5D5FEF);
+  color: var(--iris-100, #5d5fef);
   /* Text link */
   font-family: Poppins;
   font-size: 16px;
@@ -948,7 +967,7 @@ header nav .nav_items .nav-btn .burger_menu {
   align-items: center;
 }
 .position-content .position-cards .p-card a svg {
-  fill: #5D5FEF;
+  fill: #5d5fef;
 }
 .position-content .position-cards .p-card a:hover {
   color: #ffd467;
@@ -959,13 +978,13 @@ header nav .nav_items .nav-btn .burger_menu {
   transition: 0.5s;
 }
 .position-content .position-cards .p-card:hover {
-  box-shadow: 1px 1px 10px 1px #5D5FEF;
+  box-shadow: 1px 1px 10px 1px #5d5fef;
   transition: 0.5s;
   border-radius: 15px;
 }
 
 .work-and-culture-section {
-  background: #FAFAFC;
+  background: #fafafc;
 }
 .work-and-culture-section .work-and-culture-content {
   padding: 96px 0;
@@ -1076,9 +1095,9 @@ header nav .nav_items .nav-btn .burger_menu {
   padding: 0 20px;
 }
 
-main {
+/* main {
   padding-top: 96px;
-}
+} */
 
 .company-hero {
   padding-bottom: 96px;
@@ -2177,7 +2196,11 @@ main {
   cursor: pointer;
   position: relative;
 }
-.home__our-process .our-process-content .process-cards .pro-cards .main-part-of-cards {
+.home__our-process
+  .our-process-content
+  .process-cards
+  .pro-cards
+  .main-part-of-cards {
   display: flex;
   width: 395px;
   height: 164px;
@@ -2186,10 +2209,19 @@ main {
   gap: 16px;
   flex-wrap: wrap;
 }
-.home__our-process .our-process-content .process-cards .pro-cards .p-cards-right {
+.home__our-process
+  .our-process-content
+  .process-cards
+  .pro-cards
+  .p-cards-right {
   position: relative;
 }
-.home__our-process .our-process-content .process-cards .pro-cards .p-cards-right h6 {
+.home__our-process
+  .our-process-content
+  .process-cards
+  .pro-cards
+  .p-cards-right
+  h6 {
   color: #000;
   font-family: Poppins;
   font-size: 16px;
@@ -2197,7 +2229,12 @@ main {
   font-weight: 600;
   line-height: 28px; /* 175% */
 }
-.home__our-process .our-process-content .process-cards .pro-cards .p-cards-right p {
+.home__our-process
+  .our-process-content
+  .process-cards
+  .pro-cards
+  .p-cards-right
+  p {
   max-width: 289px;
   width: 100%;
   height: 72px;
@@ -2209,7 +2246,12 @@ main {
   line-height: 24px; /* 150% */
   opacity: 0.6;
 }
-.home__our-process .our-process-content .process-cards .pro-cards .p-cards-right span {
+.home__our-process
+  .our-process-content
+  .process-cards
+  .pro-cards
+  .p-cards-right
+  span {
   position: absolute;
   top: 0;
   right: 0;
@@ -2232,7 +2274,11 @@ main {
   box-shadow: 2px 1px 10px 1px rgb(151, 151, 151);
   transition: 0.3s;
 }
-.home__our-process .our-process-content .process-cards .pro-cards:hover .card-hover {
+.home__our-process
+  .our-process-content
+  .process-cards
+  .pro-cards:hover
+  .card-hover {
   display: block;
 }
 
@@ -3055,7 +3101,12 @@ header {
   font-weight: 400;
   line-height: 24px; /* 150% */
 }
-.main_section_service .home-hero .hero-content-of-service .h-left .hero-button button {
+.main_section_service
+  .home-hero
+  .hero-content-of-service
+  .h-left
+  .hero-button
+  button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3074,22 +3125,45 @@ header {
   position: relative;
   cursor: pointer;
 }
-.main_section_service .home-hero .hero-content-of-service .h-left .hero-button button svg:first-child {
+.main_section_service
+  .home-hero
+  .hero-content-of-service
+  .h-left
+  .hero-button
+  button
+  svg:first-child {
   position: absolute;
   top: 0;
   left: 0;
 }
-.main_section_service .home-hero .hero-content-of-service .h-left .hero-button button .hover-image {
+.main_section_service
+  .home-hero
+  .hero-content-of-service
+  .h-left
+  .hero-button
+  button
+  .hover-image {
   position: absolute;
   bottom: 0;
   max-width: 264px;
   display: none;
 }
-.main_section_service .home-hero .hero-content-of-service .h-left .hero-button button:hover {
+.main_section_service
+  .home-hero
+  .hero-content-of-service
+  .h-left
+  .hero-button
+  button:hover {
   background: var(--seconday-color);
   transition: 0.3s;
 }
-.main_section_service .home-hero .hero-content-of-service .h-left .hero-button button:hover .hover-image {
+.main_section_service
+  .home-hero
+  .hero-content-of-service
+  .h-left
+  .hero-button
+  button:hover
+  .hover-image {
   display: block;
   transition: 0.3s;
 }
@@ -3194,7 +3268,11 @@ header {
   cursor: pointer;
   position: relative;
 }
-.our-process .our-process-content .process-cards .pro-cards .main-part-of-cards {
+.our-process
+  .our-process-content
+  .process-cards
+  .pro-cards
+  .main-part-of-cards {
   display: flex;
   width: 395px;
   height: 164px;
@@ -3226,7 +3304,12 @@ header {
   line-height: 24px; /* 150% */
   opacity: 0.6;
 }
-.our-process .our-process-content .process-cards .pro-cards .p-cards-right span {
+.our-process
+  .our-process-content
+  .process-cards
+  .pro-cards
+  .p-cards-right
+  span {
   position: absolute;
   top: 0;
   right: 0;
@@ -3542,13 +3625,13 @@ header {
   transition: 0.5s;
 }
 .team-page-main .javena {
-  background: #ECF8F9;
+  background: #ecf8f9;
   padding: 96px 0;
 }
 .team-page-main .javena .javena-content .square {
   width: 16px;
   height: 16px;
-  background-color: #444CFC;
+  background-color: #444cfc;
 }
 .team-page-main .javena .javena-content h2 {
   color: #232536;
@@ -3599,7 +3682,7 @@ header {
   margin: 8px 0 24px 0;
 }
 .team-page-main .javena .javena-content .javena-cards .j-card a {
-  color: #444CFC;
+  color: #444cfc;
   opacity: 0.87;
   /* Text link */
   font-family: Poppins;
@@ -3612,7 +3695,7 @@ header {
   gap: 12px;
 }
 .team-page-main .javena .javena-content .javena-cards .j-card a svg {
-  fill: #444CFC;
+  fill: #444cfc;
 }
 .team-page-main .javena .javena-content .javena-cards .j-card a:hover {
   color: #98007c;
@@ -3684,19 +3767,6 @@ header {
     padding-left: 32px;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  padding-top: 83px;
-}
 
 ::-webkit-scrollbar {
   background-color: #aaa;
@@ -3753,4 +3823,4 @@ a {
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 20px;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

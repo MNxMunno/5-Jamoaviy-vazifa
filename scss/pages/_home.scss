@@ -180,9 +180,17 @@
           width: 100%;
         }
         transition: 0.5s;
+
+        .line2 {
+          width: 98.3%;
+        }
       }
       .card:hover {
         box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.5);
+      }
+      .cards2-card3 {
+        display: grid;
+        grid-template-columns: 11fr 0.5fr;
       }
     }
     .cards3 {

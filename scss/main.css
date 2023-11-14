@@ -1811,8 +1811,15 @@ header nav .nav_items .nav-btn .burger_menu {
 .home__about__us .about__us-content .cards2 .card img {
   width: 100%;
 }
+.home__about__us .about__us-content .cards2 .card .line2 {
+  width: 98.3%;
+}
 .home__about__us .about__us-content .cards2 .card:hover {
   box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.5);
+}
+.home__about__us .about__us-content .cards2 .cards2-card3 {
+  display: grid;
+  grid-template-columns: 11fr 0.5fr;
 }
 .home__about__us .about__us-content .cards3 {
   display: flex;
